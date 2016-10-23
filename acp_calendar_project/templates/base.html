@@ -77,7 +77,8 @@
       {% endif %}
 
       {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
+       <a class="btn btn-default" href="{% url 'calendar:calculator' %}">Calculator</a>
+       <a class="btn btn-default" href="{% url 'calendar:fiscal-year-calendar' 2017 %}">Fiscal Year 2017</a>
       {% endblock content %}
 
     </div> <!-- /container -->
